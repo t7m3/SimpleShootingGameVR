@@ -27,4 +27,17 @@ public class Bullet : MonoBehaviour
     {
         
     }
+
+    //　トリガー領域進入時に呼び出される
+    private void OnTriggerEnter(Collider other)
+    {
+        {
+            //　衝突時に"OnHitBullet"メッセージ
+            other.SendMessage("OnHitBullet");
+
+            
+            //　自身のゲームオブジェクトを破壊
+            Destroy(gameObject);
+        }
+    }
 }

@@ -63,6 +63,7 @@
     <Compile Include="Assets\SShootingVR\Scripts\AutoDestroy.cs" />
     <Compile Include="Assets\SShootingVR\Scripts\Bullet.cs" />
     <Compile Include="Assets\SShootingVR\Scripts\CameraRotator.cs" />
+    <Compile Include="Assets\SShootingVR\Scripts\Enemy.cs" />
     <Compile Include="Assets\SShootingVR\Scripts\Shooter.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/user224/2019UnityProject/SimpleShootingGameVR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
