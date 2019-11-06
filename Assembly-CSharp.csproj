@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\SShootingVR\Scripts\AutoDestroy.cs" />
+    <Compile Include="Assets\SShootingVR\Scripts\Bullet.cs" />
     <Compile Include="Assets\SShootingVR\Scripts\CameraRotator.cs" />
     <Compile Include="Assets\SShootingVR\Scripts\Shooter.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
