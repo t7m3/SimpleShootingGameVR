@@ -9,6 +9,8 @@ public class SpawnController : MonoBehaviour
     EnemySpawner[] spawners; // EnemySpawnerのリスト
     float timer = 0f;        // 出現時間判定用のタイマー変数
 
+    int index = 0; //　EnemySpawner を選択する変数
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,12 @@ public class SpawnController : MonoBehaviour
         if (spawnInterval < timer)
         {
             //　ランダムに EnemySpawner を選択して敵を出現させる
-            var index = Random.Range(0, spawners.Length);
+            //var index = Random.Range(0, spawners.Length);
+
+            //　順番にに EnemySpawner を選択して敵を出現させる
+            if(index++ == spawners.Length) 
+                index = 0;
+
             spawners[index].Spawn();
 
             //　タイマーリセット
