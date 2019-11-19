@@ -341,7 +341,7 @@ PrefabInstance:
     - target: {fileID: 2686987006522281391, guid: 3f097df0e5cc0ce44a57b44cd86ffe00,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2686987006522281391, guid: 3f097df0e5cc0ce44a57b44cd86ffe00,
         type: 3}
@@ -537,7 +537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e5ba23d0ce88024ab82401c69c4e719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnInterval: 3
+  spawnInterval: 4.2
 --- !u!4 &666730294
 Transform:
   m_ObjectHideFlags: 0
@@ -1067,7 +1067,7 @@ PrefabInstance:
     - target: {fileID: 2686987006522281391, guid: 3f097df0e5cc0ce44a57b44cd86ffe00,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 2686987006522281391, guid: 3f097df0e5cc0ce44a57b44cd86ffe00,
         type: 3}

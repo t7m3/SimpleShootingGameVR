@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnController : MonoBehaviour
 {
-    [SerializeField] float spawnInterval = 3f; //　敵出現間隔
+    [SerializeField] float spawnInterval = 4.2f; //　敵出現間隔
 
     EnemySpawner[] spawners; // EnemySpawnerのリスト
     float timer = 0f;        // 出現時間判定用のタイマー変数
@@ -23,6 +23,7 @@ public class SpawnController : MonoBehaviour
     {
         //　タイマー更新
         timer += Time.deltaTime;
+        Debug.Log(timer);
 
         //　出現間隔の判定
         if (spawnInterval < timer)

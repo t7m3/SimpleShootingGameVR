@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
     //　OnHitBulletメッセージから呼び出されることを想定
     void OnHitBullet()
     {
-        //　自身のゲームオブジェクトを一定時間後に破棄
+        //　自身のゲームオブジェクトを破棄
         Destroy(gameObject);
     }
 

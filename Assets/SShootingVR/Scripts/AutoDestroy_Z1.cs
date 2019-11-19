@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AutoDestroy_Z1 : MonoBehaviour
 {
-     float lifetime = 2f; //ゲームオブジェクトの寿命 
+    [SerializeField] float lifetime = 4.2f; //ゲームオブジェクトの寿命 
 
     // Start is called before the first frame update
     void Start()
