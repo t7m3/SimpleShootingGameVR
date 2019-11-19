@@ -17,6 +17,7 @@ public class CameraRotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+#if UNITY_EDITOR
         //入力による回転量を取得
         var horizontalRotation = Input.GetAxis("Horizontal") * angularVelocity * Time.deltaTime;
         var verticalRotation = -Input.GetAxis("Vertical") * angularVelocity * Time.deltaTime;
@@ -30,6 +31,7 @@ public class CameraRotator : MonoBehaviour
 
         //Transformコンポーネントに回転量を適用する
         transform.rotation = Quaternion.Euler(verticalAngle, horizontalAngle, 0f);
+#endif
 
     }
 }

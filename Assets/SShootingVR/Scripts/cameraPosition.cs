@@ -23,8 +23,8 @@ public class cameraPosition : MonoBehaviour
         Vector3 p1 = transform.position;
         Quaternion r1 = transform.rotation;
 
-        //uiText.text = string.Format("ここでは x:{0:F}, y:{1:F}, z:{2:F}", p1.x, p1.y, p1.z);
-        uiText.text = string.Format("ここでは x:{0:F}, y:{1:F}, z:{2:F}", r1.x, r1.y, r1.z);
+        //uiText.text = string.Format("カメラのpositionは x:{0:F}, y:{1:F}, z:{2:F}", p1.x, p1.y, p1.z);
+        uiText.text = string.Format("カメラのrotationは x:{0:F}, y:{1:F}, z:{2:F}", r1.x, r1.y, r1.z);
 
     }
 }
