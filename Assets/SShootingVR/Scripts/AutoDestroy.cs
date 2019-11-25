@@ -10,7 +10,7 @@ public class AutoDestroy : MonoBehaviour
     void Start()
     {
         //一定時間経過後にゲームオブジェクトを破棄する
-        //Destroy(gameObject, lifetime);
+        Destroy(gameObject, lifetime);
     }
 
     // Update is called once per frame
