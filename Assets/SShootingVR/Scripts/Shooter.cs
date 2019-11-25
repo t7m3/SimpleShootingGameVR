@@ -64,7 +64,7 @@ public class Shooter : MonoBehaviour
         //　デバグ用
         uiText.text = "shoot関数に来た";
         uiText.text = string.Format("ガンバレルエンドは x:{0:F}, y:{1:F}, z:{2:F}", p1.x, p1.y, p1.z);
-        Debug.Log("x = " + p1.x + "、y = " + p1.y + "、z = " + p1.z);
+        //Debug.Log("x = " + p1.x + "、y = " + p1.y + "、z = " + p1.z);
 
         //プレハブを元に、シーン上に弾を生成
         //Instantiate(bulletPrefab, gunBarrelEnd.position, gunBarrelEnd.rotation);

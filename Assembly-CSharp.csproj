@@ -70,6 +70,7 @@
     <Compile Include="Assets\SShootingVR\Scripts\CameraRotator.cs" />
     <Compile Include="Assets\SShootingVR\Scripts\Enemy.cs" />
     <Compile Include="Assets\SShootingVR\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\SShootingVR\Scripts\ScoreText.cs" />
     <Compile Include="Assets\SShootingVR\Scripts\Shooter.cs" />
     <Compile Include="Assets\SShootingVR\Scripts\SpawnController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

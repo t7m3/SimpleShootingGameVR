@@ -23,22 +23,27 @@ public class SpawnController : MonoBehaviour
     {
         //　タイマー更新
         timer += Time.deltaTime;
-        Debug.Log(timer);
+        //Debug.Log(timer);
 
         //　出現間隔の判定
         if (spawnInterval < timer)
         {
+            //　タイマーリセット
+            timer = 0f;
+
             //　ランダムに EnemySpawner を選択して敵を出現させる
             //var index = Random.Range(0, spawners.Length);
 
-            //　順番にに EnemySpawner を選択して敵を出現させる
-            if(index++ == spawners.Length) 
-                index = 0;
+            //Debug.Log(spawners.Length);
 
+            //　順番にに EnemySpawner を選択して敵を出現させる
+            index++;
+            if(index >= spawners.Length)  // 何故か spawners.Length が 3 になっている。何故？
+                index = 1;                // リストの添え字は0ではなく、１から始まるようだ
+
+            //Debug.Log(index);
             spawners[index].Spawn();
 
-            //　タイマーリセット
-            timer = 0f;
         }
     }
 }
